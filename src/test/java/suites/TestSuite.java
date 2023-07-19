@@ -6,8 +6,8 @@ import tests.SearchTests;
 
 @RunWith(Suite.class)
 
-@Suite.SuiteClasses(
+@Suite.SuiteClasses({
         SearchTests.class
-)
+})
 public class TestSuite {
 }
