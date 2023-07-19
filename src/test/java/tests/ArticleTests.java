@@ -1,4 +1,4 @@
-package test.java;
+package tests;
 
 import libs.CoreTestCase;
 import libs.ui.ArticlePageObject;
@@ -10,7 +10,7 @@ public class ArticleTests extends CoreTestCase {
     @Test
     public void testCompareArticleTitle() {
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
-
+        SearchPageObject.clickOnboardingSkipButton();
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
@@ -27,7 +27,7 @@ public class ArticleTests extends CoreTestCase {
     @Test
     public void testSwipeArticle() {
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
-
+        SearchPageObject.clickOnboardingSkipButton();
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Appium");
         SearchPageObject.clickByArticleWithSubstring("Appium");
@@ -40,6 +40,7 @@ public class ArticleTests extends CoreTestCase {
     @Test
     public void testCheckTitleElementInArticle() {
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject.clickOnboardingSkipButton();
         SearchPageObject.initSearchInput();
         String search_line = "Java";
         SearchPageObject.typeSearchLine(search_line);

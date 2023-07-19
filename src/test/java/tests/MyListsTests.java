@@ -1,4 +1,4 @@
-package test.java;
+package tests;
 
 import libs.CoreTestCase;
 import libs.ui.ArticlePageObject;
