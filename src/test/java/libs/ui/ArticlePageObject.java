@@ -3,6 +3,7 @@ package libs.ui;
 import io.appium.java_client.AppiumDriver;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class ArticlePageObject extends  MainPageObject
 {
@@ -23,7 +24,7 @@ public class ArticlePageObject extends  MainPageObject
         return FOLDER_BY_NAME_TPL.replace("{FOLDER_NAME}",name_of_folder);
     }
 
-    public ArticlePageObject(AppiumDriver driver)
+    public ArticlePageObject(RemoteWebDriver driver)
     {
         super(driver);
     }

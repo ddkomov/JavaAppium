@@ -1,6 +1,7 @@
 package libs.ui;
 
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public class SearchPageObject extends MainPageObject {
@@ -14,7 +15,7 @@ public class SearchPageObject extends MainPageObject {
             SEARCH_EMPTY_RESULT_ELEMENT = "xpath://*[@text='No results']",
             SEARCH_ONBOARDING_SKIP_BUTTON = "id:org.wikipedia:id/fragment_onboarding_skip_button";
 
-    public SearchPageObject(AppiumDriver driver)
+    public SearchPageObject(RemoteWebDriver driver)
     {
         super(driver);
     }
